@@ -14,16 +14,17 @@ class delete_a_key_from_an_array {
     for (int i = 0, j = 0; j < size; ++i, ++j) {
       if (array[j] == key) {
         j++;
+      } else {
+        array[i] = array[j];
+        cout << array[i] << " ";
       }
-      array[i] = array[j];
-      cout << array[i] << " ";
     }
   }
 };
 
 int main(int argc, char const *argv[]) {
   delete_a_key_from_an_array object;
-  int array[] = {5, 3, 7, 11, 2, 3, 13, 5, 7};
-  object.delete_key(array, 9, 5);
+  int array[] = {5, 3, 7, 11, 3, 3, 3, 5, 7};
+  object.delete_key(array, 9, 3);
   return 0;
 }
