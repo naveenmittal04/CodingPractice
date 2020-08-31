@@ -1,6 +1,6 @@
 /*
  * Author: Naveen Kumar Mittal
- * Question: 6.5 from EOPI
+ * Question: 6.6 from EOPI
  *
  */
 
@@ -33,6 +33,6 @@ int main(int argc, char const *argv[]) {
   delete_duplicates_from_sorted_array object;
   int array[] = {2, 3, 5, 5, 7, 11, 11, 11, 13};
   object.delete_key(array, 9);
-  object.print_array(array, 9);
+  object.print_array(array, size);
   return 0;
 }
