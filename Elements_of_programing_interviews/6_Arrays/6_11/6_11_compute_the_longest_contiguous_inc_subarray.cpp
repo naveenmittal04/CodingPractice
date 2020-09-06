@@ -1,6 +1,6 @@
 /*
  * Author: Naveen Kumar Mittal
- * Question: 6.10 from EOPI
+ * Question: 6.11 from EOPI
  *
  */
 #include <iostream>
@@ -36,6 +36,10 @@ class Longest_contiguous_subarray {
 
     return {r_i, r_j};
   }
+
+  // we can improve above logic by only checking for sub array
+  // length greater then alreay computed max subarray legnth
+  pair<int, int> solution1(int array[], size_t size) {}
 };
 
 int main(int argc, char const *argv[]) {
